@@ -8,27 +8,21 @@
   </head>
   <body>
     <h3>Dashboard Playlist</h1>
+    <form id="addUrl">
+      <button class="btn btn-primary btn-sm float-right">Add</button>
+    </form>
+    <div style="clear: both"></div>
+    <hr/>
     <form id="startForm">
-        <div class="form-group">
-            <input type="url" class="form-control" placeholder="Enter a URL like https://www.google.com/" value="https://asdf.com/">
-        </div>
-        <div class="form-group">
-            <input type="url" class="form-control" placeholder="Enter a URL like https://www.google.com/" value="https://google.com/">
-        </div>
-        <div class="form-group">
-            <input type="url" class="form-control" placeholder="Enter a URL like https://www.google.com/">
-        </div>
-        <div class="form-group">
-            <input type="url" class="form-control" placeholder="Enter a URL like https://www.google.com/">
-        </div>
-        <div class="form-group">
-            <input type="url" class="form-control" placeholder="Enter a URL like https://www.google.com/">
-        </div>
-        <button class="btn btn-success">Start</button>
+        <button class="btn btn-success float-right">Start</button>
     </form>
+    <div style="clear: both"></div>
+    <hr />
     <form id="stopForm">
-      <button class="btn btn-danger">Stop</button>
+      <button class="btn btn-danger float-right">Stop</button>
     </form>
+    <div style="clear: both"></div>
+    <hr />
     <script type="text/javascript" src="popup.js"></script>
   </body>
 </html>
