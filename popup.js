@@ -29,7 +29,7 @@ $(function(){
         
         if(urls.length > 0) {
             let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-            chrome.runtime.sendMessage({ urls: urls, tabId: tab.id, duration: 5000 }) 
+            chrome.runtime.sendMessage({ urls: urls, tabId: tab.id, duration: 30 * 1000 }) 
             chrome.storage.sync.set({lastUrls: urls});         
         }
     })  
